@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="fire_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="288" h="0.0000000000" zoom="1069.5156498307" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="weap_m4_slst_65d" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="-0.01496599" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="6350">
+				<waveblock start="0">
+					<simpleblockfile filename="e08085c4.au" len="6350" min="-1.0" max="0.999969" rms="0.535638"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_m4_slst_65d" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="-0.01496599" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="6350">
+				<waveblock start="0">
+					<simpleblockfile filename="e08089f0.au" len="6350" min="-1.0" max="0.999969" rms="0.522496"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_p90_slst_1" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="72365">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808d6e.au" len="72365" min="-0.99884" max="0.987518" rms="0.078556"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_p90_slst_1" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="72365">
+				<waveblock start="0">
+					<simpleblockfile filename="e080830e.au" len="72365" min="-0.99884" max="0.99881" rms="0.090237"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_p90_silencer_slst_1" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3249">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808552.au" len="3249" min="-1.0" max="0.999969" rms="0.502367"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_p90_silencer_slst_1" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3249">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808b9a.au" len="3249" min="-1.0" max="0.999969" rms="0.543167"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_20mm_chopgunner_player" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="-0.04308390" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="6350">
+				<waveblock start="0">
+					<simpleblockfile filename="e080867d.au" len="6350" min="-0.707946" max="0.707924" rms="0.440762"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_20mm_chopgunner_player" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="-0.04308390" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="6350">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a3d.au" len="6350" min="-0.707946" max="0.707924" rms="0.452195"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

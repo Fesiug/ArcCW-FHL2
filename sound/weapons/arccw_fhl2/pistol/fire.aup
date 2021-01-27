@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="fire_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="416" h="0.0000000000" zoom="1023.1545132463" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="weap_usp45_slst_y1b" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="51157">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808d59.au" len="858" min="-1.0" max="0.999969" rms="0.839218"/>
+				</waveblock>
+				<waveblock start="858">
+					<simpleblockfile filename="e0808f36.au" len="50299" min="-0.984039" max="0.984039" rms="0.124193"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_usp45_slst_y1b" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="51157">
+				<waveblock start="0">
+					<simpleblockfile filename="e080891e.au" len="858" min="-1.0" max="0.999969" rms="0.839219"/>
+				</waveblock>
+				<waveblock start="858">
+					<simpleblockfile filename="e080878f.au" len="50299" min="-0.984039" max="0.984039" rms="0.135627"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_usp45sd_slst_y1" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.01653061" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="15755">
+				<waveblock start="0">
+					<simpleblockfile filename="e080898d.au" len="175" min="-0.000939" max="0.000987" rms="0.000446"/>
+				</waveblock>
+				<waveblock start="175">
+					<simpleblockfile filename="e08081c5.au" len="15580" min="-0.934088" max="0.999991" rms="0.121082"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_usp45sd_slst_y1" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.01653061" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="15755">
+				<waveblock start="0">
+					<simpleblockfile filename="e08083a1.au" len="175" min="-0.001195" max="0.001243" rms="0.000491"/>
+				</waveblock>
+				<waveblock start="175">
+					<simpleblockfile filename="e0808a62.au" len="15580" min="-0.835488" max="0.861004" rms="0.10655"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_glock_slst_1d2" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.05739229" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="73113">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808cc8.au" len="73113" min="-0.594116" max="0.439575" rms="0.043305"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_glock_slst_1d2" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.05739229" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="73113">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808094.au" len="73113" min="-0.46817" max="0.444611" rms="0.041415"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_mp5_slst_6m3" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.02149660" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="923">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a7c.au" len="923" min="-1.0" max="0.999969" rms="0.755568"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="weap_mp5_slst_6m3" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.02149660" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="923">
+				<waveblock start="0">
+					<simpleblockfile filename="e080873d.au" len="923" min="-1.0" max="0.999969" rms="0.754946"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

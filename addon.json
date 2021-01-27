@@ -1,0 +1,22 @@
+{
+	"title" :	"[ArcCW] FHL2",
+	"type"  :	"weapon",
+	"tags"  :	[],
+	"ignore":
+	[
+		"*.cmd",
+		"*.ini",
+		"*.lnk",
+		"*.url",
+		"*.psd",
+        "*.bat",
+        ".git/*",
+        ".gitignore",
+        ".gitattributes",
+        "*.code-workspace",
+        "LICENSE",
+        "README.md",
+		"ArcCW-FHL2.jpg",
+		"ArcCW-FHL2.png"
+	]
+}
