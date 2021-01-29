@@ -46,16 +46,24 @@ SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+        CustomBars = "-",
+        PrintName = "AUTOMATIC"
     },
     {
         Mode = -3,
+        CustomBars = "-",
+        PrintName = "3 ROUND BURST",
         Mult_RPM = 1.5,
     },
     {
         Mode = 1,
+        CustomBars = "-",
+        PrintName = "SEMI-AUTOMATIC"
     },
     {
-        Mode = 0
+        Mode = 0,
+        CustomBars = "_",
+        PrintName = "SAFETY"
     }
 }
 
