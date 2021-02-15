@@ -69,30 +69,16 @@ SWEP.ShootVol = 140 -- volume of shoot sound
 SWEP.ShootPitch = 90 -- pitch of shoot sound
 SWEP.ShootPitchVariation = 0.05
 
-SWEP.ShootSound = ")weapons/arccw_fhl2/shotgun/fire2.wav"
+SWEP.ShootSound = ")weapons/arccw_fhl2/shotgun/fire3.wav"
 SWEP.ShootSoundSilenced = nil
 SWEP.DistantShootSound = ")weapons/arccw_fhl2/ar2/fire_dist.wav"
 
 SWEP.Hook_AddShootSound = function(wep, data)
-    local wbc = wep:GetBurstCount()
-    local wc = wep:Clip1() / wep:GetCapacity()
     local wc2 = wep:Clip1()
 
-    local snd_overhot = ")weapons/arccw_fhl2/ar2/over_hot.wav"
     local snd_nearempty = ")weapons/arccw_fhl2/shotgun/over_nearempty.wav"
-    local snd_empty = ")weapons/arccw_fhl2/shotgun/over_empty.wav"
 
-    if wbc > 2 then
-        wep:EmitSound(snd_overhot, 140, 90 + wbc, 0+(wbc/15), CHAN_AUTO )
-    end
-
-    if wc < 0.5 then
-        wep:EmitSound(snd_nearempty, 140, 90 - wc2*16, 1, CHAN_AUTO )
-    end
-
-    if wc <= 0 then
-        wep:EmitSound(snd_empty, 140, 90 - wc2, 1, CHAN_AUTO )
-    end
+    wep:EmitSound(snd_nearempty, 140, 90 - wc2*2, 1, CHAN_AUTO )
 end
 
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
@@ -100,11 +86,11 @@ SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound = "physics/body/body_medium_break2.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_mp5"
-SWEP.ShellModel = "models/shells/shell_57.mdl"
+SWEP.MuzzleEffect = "muzzleflash_shotgun"
+SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellPitch = 100
-SWEP.ShellScale = 1.25
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
+SWEP.ShellScale = 2
+SWEP.ShellRotateAngle = Angle(0, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

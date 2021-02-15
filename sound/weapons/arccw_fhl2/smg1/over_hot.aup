@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="over_hot_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="17183.7255772647" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Sound Forge 4.5;Sonic Foundry Sound Forge 5.0"/>
+		<tag name="YEAR" value="2000-12-05"/>
+	</tags>
+	<wavetrack name="sound/weapons/smg1/smg1_reload" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="4504">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808403.au" len="4504" min="-0.675408" max="0.999946" rms="0.088037"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="sound/weapons/smg1/smg1_reload" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="4504">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808b39.au" len="4504" min="-0.738038" max="0.970054" rms="0.099564"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="sound/weapons/smg1/smg1_reload" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.02333333" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1966">
+				<waveblock start="0">
+					<simpleblockfile filename="e080870a.au" len="1966" min="-0.999412" max="0.939906" rms="0.210976"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="sound/weapons/smg1/smg1_reload" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.02333333" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1966">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a0a.au" len="1966" min="-1.000025" max="0.915137" rms="0.202845"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

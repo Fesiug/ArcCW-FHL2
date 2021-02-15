@@ -82,7 +82,7 @@ SWEP.MuzzleEffect = "muzzleflash_3"
 SWEP.ShellModel = "models/shells/shell_57.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellScale = 1.25
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
+SWEP.ShellRotateAngle = Angle(0, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

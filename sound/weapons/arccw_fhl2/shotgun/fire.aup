@@ -1,40 +1,10 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
-<project xmlns="http://audacity.sourceforge.net/xml/" projname="fire_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="448" h="0.0000000000" zoom="823.5666553163" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="fire_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.5974015544" zoom="823.5666553163" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
 	<tags>
-		<tag name="Software" value="Sonic Foundry Sound Forge 5.0"/>
 		<tag name="YEAR" value="2003-02-17"/>
+		<tag name="Software" value="Sonic Foundry Sound Forge 5.0"/>
 	</tags>
-	<wavetrack name="Audio Track" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.02956916" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="5835">
-				<waveblock start="0">
-					<simpleblockfile filename="e0808474.au" len="5835" min="-0.935931" max="0.928964" rms="0.460891"/>
-				</waveblock>
-			</sequence>
-			<envelope numpoints="0"/>
-		</waveclip>
-	</wavetrack>
-	<wavetrack name="Audio Track" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.02956916" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="5835">
-				<waveblock start="0">
-					<simpleblockfile filename="e0808cfd.au" len="5835" min="-0.93614" max="0.929078" rms="0.460669"/>
-				</waveblock>
-			</sequence>
-			<envelope numpoints="0"/>
-		</waveclip>
-	</wavetrack>
-	<wavetrack name="sound/weapons/shotgun/shotgun_cock" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="9899">
-				<waveblock start="0">
-					<simpleblockfile filename="e0808b6b.au" len="9899" min="-1.0" max="0.999969" rms="0.150184"/>
-				</waveblock>
-			</sequence>
-			<envelope numpoints="0"/>
-		</waveclip>
-	</wavetrack>
 	<wavetrack name="sound/weapons/shotgun/shotgun_dbl_fire7" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.00000000" colorindex="0">
 			<sequence maxsamples="262144" sampleformat="262159" numsamples="44959">
@@ -45,27 +15,27 @@
 			<envelope numpoints="0"/>
 		</waveclip>
 	</wavetrack>
-	<wavetrack name="sound/weapons/shotgun/shotgun_empty" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.01197279" colorindex="0">
+	<wavetrack name="sound/weapons/shotgun/shotgun_empty" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.01943311" colorindex="0">
 			<sequence maxsamples="262144" sampleformat="262159" numsamples="8310">
 				<waveblock start="0">
-					<simpleblockfile filename="e0808f02.au" len="8310" min="-10.0" max="9.999695" rms="1.138072"/>
+					<simpleblockfile filename="e0808b6a.au" len="8310" min="-8.239087" max="7.86997" rms="0.773668"/>
 				</waveblock>
 			</sequence>
 			<envelope numpoints="0"/>
 		</waveclip>
 	</wavetrack>
-	<wavetrack name="sound/weapons/shotgun/shotgun_empty" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
-		<waveclip offset="0.01197279" colorindex="0">
+	<wavetrack name="sound/weapons/shotgun/shotgun_empty" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.01943311" colorindex="0">
 			<sequence maxsamples="262144" sampleformat="262159" numsamples="8310">
 				<waveblock start="0">
-					<simpleblockfile filename="e0808ea6.au" len="8310" min="-10.0" max="9.999695" rms="1.146727"/>
+					<simpleblockfile filename="e0808fa7.au" len="8310" min="-7.544529" max="7.715003" rms="0.757967"/>
 				</waveblock>
 			</sequence>
 			<envelope numpoints="0"/>
 		</waveclip>
 	</wavetrack>
-	<wavetrack name="weap_stryker_slst_1b2" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+	<wavetrack name="weap_stryker_slst_1b2" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.00727891" colorindex="0">
 			<sequence maxsamples="262144" sampleformat="262159" numsamples="93976">
 				<waveblock start="0">
@@ -75,7 +45,7 @@
 			<envelope numpoints="0"/>
 		</waveclip>
 	</wavetrack>
-	<wavetrack name="weap_stryker_slst_1b2" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+	<wavetrack name="weap_stryker_slst_1b2" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.07405896" colorindex="0">
 			<sequence maxsamples="262144" sampleformat="262159" numsamples="93976">
 				<waveblock start="0">

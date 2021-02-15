@@ -21,7 +21,7 @@ SWEP.ViewModel = "models/weapons/c_smg1.mdl"
 SWEP.WorldModel = "models/weapons/arccw_go/v_smg_mp7.mdl"
 SWEP.ViewModelFOV = 54
 
-SWEP.DefaultBodygroups = "000000000000"
+SWEP.DefaultBodygroups = "000100000000"
 
 SWEP.Damage = 16
 SWEP.DamageMin = 8 -- damage done at maximum range
@@ -85,6 +85,23 @@ SWEP.ShootSound = ")weapons/arccw_fhl2/smg1/fire.wav"
 SWEP.ShootSoundSilenced = nil
 SWEP.DistantShootSound = nil
 
+SWEP.Hook_AddShootSound = function(wep, data)
+    local wbc = wep:GetBurstCount()
+    local wc = wep:Clip1() / wep:GetCapacity()
+    local wc2 = wep:Clip1()
+
+    local snd_overhot = ")weapons/arccw_fhl2/smg1/over_hot.wav"
+    local snd_nearempty = ")weapons/arccw_fhl2/smg1/over_nearempty.wav"
+
+    if wbc > 2 then
+        wep:EmitSound(snd_overhot, 140, 100 + wbc/2, 1, CHAN_AUTO )
+    end
+
+    if wc < 0.20 then
+        wep:EmitSound(snd_nearempty, 140, 120 - wc2*7, 1, CHAN_AUTO )
+    end
+end
+
 SWEP.MeleeSwingSound = "arccw_go/m249/m249_draw.wav"
 SWEP.MeleeMissSound = "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound = "arccw_go/knife/knife_hitwall1.wav"
@@ -94,7 +111,7 @@ SWEP.MuzzleEffect = "muzzleflash_5"
 SWEP.ShellModel = "models/shells/shell_57.mdl"
 SWEP.ShellPitch = 100
 SWEP.ShellScale = 1.25
-SWEP.ShellRotateAngle = Angle(0, 180, 0)
+SWEP.ShellRotateAngle = Angle(0, 0, 0)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
