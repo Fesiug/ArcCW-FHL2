@@ -219,7 +219,8 @@ SWEP.Animations = {
         SoundTable = {
                 {s = "weapons/arccw_fhl2/pistol/r_lift.wav", 		t = 0},
                 {s = "weapons/arccw_fhl2/pistol/r_magout.wav", 		t = 0.2},
-                {s = "weapons/arccw_fhl2/pistol/r_magin.wav", 		t = 0.6},
+                {s = "weapons/arccw_fhl2/pistol/r_magin.wav", 		t = 0.5},
+                {s = "weapons/arccw_fhl2/pistol/r_magin.wav", 		t = 0.8, p = 120},
         },
     },
 }

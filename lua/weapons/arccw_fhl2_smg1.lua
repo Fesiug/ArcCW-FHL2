@@ -97,8 +97,8 @@ SWEP.Hook_AddShootSound = function(wep, data)
         wep:EmitSound(snd_overhot, 140, 100 + wbc/2, 1, CHAN_AUTO )
     end
 
-    if wc < 0.20 then
-        wep:EmitSound(snd_nearempty, 140, 120 - wc2*7, 1, CHAN_AUTO )
+    if wc < 0.4 then
+        wep:EmitSound(snd_nearempty, 140, 130 - wc*95, 1-wc, CHAN_AUTO )
     end
 end
 

@@ -17,9 +17,9 @@ SWEP.SlotPos = 1
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/c_357.mdl"
+SWEP.ViewModel = "models/weapons/arccw_fhl2/c_357_4a.mdl"
 SWEP.WorldModel = "models/weapons/arccw_go/v_smg_mp7.mdl"
-SWEP.ViewModelFOV = 54
+SWEP.ViewModelFOV = 65
 
 SWEP.DefaultBodygroups = "000000000000"
 
@@ -37,11 +37,15 @@ SWEP.Primary.ClipSize = 6 -- DefaultClip is automatically set.
 
 SWEP.PhysBulletMuzzleVelocity = 740
 
-SWEP.Recoil = 4
-SWEP.RecoilSide = 1
+SWEP.Recoil = 2
+SWEP.RecoilSide = 0.5
 SWEP.RecoilRise = 8
+SWEP.RecoilPunch = 4
 
-SWEP.Delay = 0.5 -- 60 / RPM.
+SWEP.MaxRecoilBlowback = 100
+SWEP.VisualRecoilMult = 5
+
+SWEP.Delay = 0.4 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -92,29 +96,30 @@ SWEP.SightedSpeedMult = 0.75
 SWEP.SightTime = 0.25
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-5.26, -7, 0.95),
-    Ang = Angle(0, 0.15, 0),
-    Magnification = 1.1,
+    Pos = Vector(-4.45, 0, 1.463),
+    Ang = Angle(0, -0.258, 0),
+    Magnification = 1.05,
+    ViewModelFOV = 55,
     SwitchToSound = "", -- sound that plays when switching to this sight
     CrosshairInSights = false
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "smg"
-SWEP.HoldtypeSights = "smg"
+SWEP.HoldtypeActive = "revolver"
+SWEP.HoldtypeSights = "revolver"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
 local fcw = Vector(0, 0, 1)
 
-SWEP.ActivePos = Vector(-0.5, 0, -0.5) + fcw
+SWEP.ActivePos = Vector(-2, -1, 1) + fcw
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.SprintPos = Vector(-0.5, 0, -0.5) + fcw
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = SWEP.ActivePos
+SWEP.SprintAng = SWEP.ActiveAng
 
-SWEP.CrouchPos = Vector(0, 0, 0)
-SWEP.CrouchAng = Angle(0, 0, 0)
+SWEP.CrouchPos = SWEP.ActivePos + Vector(-0.5, 0, -1.5)
+SWEP.CrouchAng = SWEP.ActiveAng + Angle(1, 0.25, -3)
 
 SWEP.HolsterPos = Vector(-0.5, 0, -0.5) + fcw
 SWEP.HolsterAng = Angle(-7, 7, 0)
@@ -122,7 +127,7 @@ SWEP.HolsterAng = Angle(-7, 7, 0)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.CustomizePos = Vector(3, 0, 0)
+SWEP.CustomizePos = Vector(3, -1, 1)
 SWEP.CustomizeAng = Angle(5, 20, 10)
 
 SWEP.BarrelLength = 24
@@ -143,30 +148,63 @@ SWEP.Attachments = {}
 
 SWEP.Animations = {
     ["idle"] = {
-        Source = "idle01"
+        Source = "idle",
+        Time = 2/30
     },
     ["enter_sprint"] = {
-        Source = "idletolow",
-        Time = 0.33
+        Source = "sprint_in",
+        Time = 10/30
     },
     ["idle_sprint"] = {
-        Source = "lowidle"
+        Source = "sprint_loop",
+        Time = 30/40
     },
     ["exit_sprint"] = {
-        Source = "lowtoidle",
-        Time = 0.33
+        Source = "sprint_out",
+        Time = 10/30
     },
     ["draw"] = {
-        Source = "draw"
+        Source = "sprint_out",
+        Time = 0.5,
+        SoundTable = {{s = "MW2Common.Deploy", 		t = 0}},
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.35,
     },
     ["holster"] = {
-        Source = "holster"
+        Source = "sprint_in",
+        Time = 0.5,
+        LHIK = true,
+        LHIKIn = 0,
+        LHIKOut = 0.35,
     },
     ["fire"] = {
-        Source = "fire"
+        Source = "fire",
+        Time = 0.67,
+    },
+    ["fire_iron"] = {
+        Source = "fire_ads",
+        Time = 0.5,
     },
     ["reload"] = {
         Source = "reload",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
+        Time = 92/30,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_REVOLVER,
+        --[[SoundTable = {
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_lift_v1.wav", 		t = 0/30},
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_clipout_v1.wav", 	t = 20/30},
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_clipin_v1.wav", 	t = 50/30},
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_chamber_v1.wav", 	t = 66/30},
+        },]]
+        SoundTable = {
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_lift_v1.wav", 		t = 0},
+				{s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_clipout_v1.wav", 	t = 0.66},
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_clipin_v1.wav", 	t = 1.6},
+                {s = "weapons/fesiugmw2/foley/wpfoly_anaconda_reload_chamber_v1.wav", 	t = 2.2},
+        },
+        LHIK = true,
+        LHIKIn = 0.5,
+        LHIKOut = 0.6,
+        LastClip1OutTime = 1.5,
     },
 }
